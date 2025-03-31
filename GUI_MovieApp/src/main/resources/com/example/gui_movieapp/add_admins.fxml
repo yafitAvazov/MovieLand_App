@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="493.0" prefWidth="349.0" spacing="20.0" stylesheets="@/style.css"
+      xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.gui_movieapp.AddAdminController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="30.0"/>
+    </padding>
+
+    <Label styleClass="title-label" text="ADDING ADMIN"/>
+    <VBox alignment="CENTER" spacing="10">
+        <Label styleClass="field-label" text="NAME"/>
+        <TextField fx:id="nameField" styleClass="input-field"/>
+
+        <Label styleClass="field-label" text="USERNAME"/>
+        <TextField fx:id="usernameField" styleClass="input-field"/>
+
+        <Label styleClass="field-label" text="PASSWORD"/>
+        <PasswordField fx:id="passwordField" styleClass="input-field"/>
+
+        <Button mnemonicParsing="false" onAction="#addAdminClicked" fx:id="addAdminButton"
+                style="-fx-min-height: 50px;  -fx-padding: 5px 5px; -fx-max-width: 100px; -fx-background-color: rgba(200, 200, 200, 0.2); "                text="ADD"/>
+    </VBox>
+
+    <Label fx:id="errorLabel" style="-fx-text-fill: #f66b6b;" visible="false"/>
+
+
+    <HBox alignment="BOTTOM_LEFT" prefHeight="300" prefWidth="150" spacing="10">
+        <Button mnemonicParsing="false" onAction="#goBackToSuperAdmin" styleClass="back-button1">
+            <graphic>
+                <ImageView fitWidth="40" fitHeight="40" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@../../../images/back.png"/>
+                </ImageView>
+            </graphic>
+        </Button>
+    </HBox>
+</VBox>

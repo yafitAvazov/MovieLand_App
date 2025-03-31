@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="551.0" prefWidth="436.0" spacing="20.0" stylesheets="@/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui_movieapp.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <TextFlow prefHeight="200.0" prefWidth="200.0" styleClass="custom-textflow">
+        <children>
+            <Text styleClass="textflow1" text="Welcome to" />
+            <Text styleClass="textflow2" text=" MovieLand" />
+        </children>
+    </TextFlow>
+    <Label fx:id="welcomeText" />
+    <TextFlow prefHeight="30.0" prefWidth="200.0" styleClass="choose_textflow">
+
+            <Text styleClass="chooseText" text="Click to choose a user" />
+
+    </TextFlow>
+   <HBox prefHeight="100.0" prefWidth="200.0" spacing="10" alignment="CENTER">
+       <children>
+           <Button fx:id="adminButton" onAction="#switchToAdmin" text="ADMIN" styleClass="button"/>
+           <Button fx:id="customerButton" onAction="#switchToCustomer" text="CUSTOMER" styleClass="button"/>
+       </children>
+   </HBox>
+</VBox>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="493.0" prefWidth="349.0" spacing="20.0" stylesheets="@/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui_movieapp.AllMoviesController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="30.0" />
+    </padding>
+    <Label styleClass="title-label" text="ALL MOVIES" />
+    <VBox alignment="TOP_CENTER" prefHeight="600" prefWidth="500" spacing="10">
+        <TableView fx:id="movieTable" prefHeight="800" prefWidth="700" styleClass="custom-table">
+            <columns>
+                <TableColumn fx:id="titleColumn" text="Title" styleClass="custom-column" />
+                <TableColumn fx:id="genreColumn" text="Genre" styleClass="custom-column" />
+                <TableColumn fx:id="directorColumn" text="Director" styleClass="custom-column" />
+                <TableColumn fx:id="releaseYearColumn" text="Release Year" styleClass="custom-column" />
+                <TableColumn fx:id="actorsColumn" text="Actors" styleClass="custom-column" />
+                <TableColumn fx:id="descriptionColumn" text="Description" styleClass="custom-column" />
+                <TableColumn fx:id="editColumn"  styleClass="custom-column" />
+                <TableColumn fx:id="deleteColumn"  styleClass="custom-column"/>
+
+            </columns>
+        </TableView>
+        <HBox alignment="BOTTOM_LEFT" prefHeight="300" prefWidth="150" spacing="10">
+            <Button mnemonicParsing="false" onAction="#goBackToAdmin" styleClass="back-button1">
+                <graphic>
+                    <ImageView fitWidth="40" fitHeight="40" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../../../images/back.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </HBox>
+    </VBox>
+
+</VBox>

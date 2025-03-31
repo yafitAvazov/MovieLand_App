@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="493.0" prefWidth="349.0" spacing="20.0" stylesheets="@/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui_movieapp.RemoveAdminController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="30.0" />
+    </padding>
+    <Label styleClass="title-label" text="REMOVE ADMINS" />
+    <VBox alignment="TOP_CENTER" prefHeight="600" prefWidth="400" spacing="10">
+
+        <TextFlow prefHeight="50.0" prefWidth="50.0">
+            <Text styleClass="customer_textflow1" text="Search for a movie to Remove"  style="-fx-font-size: 35px;" wrappingWidth="331.46484375" />
+        </TextFlow>
+
+
+        <HBox prefHeight="100.0" prefWidth="200.0" spacing="10">
+            <TextField fx:id="searchField" promptText="Enter Name or Username" maxWidth="400" prefHeight="25" prefWidth="350" styleClass="text-field" onKeyReleased="#searchAdmins" />
+
+            <Button fx:id="searchButton" onAction="#searchAdmins" styleClass="image-button">
+                <graphic>
+                    <ImageView fitWidth="40" fitHeight="40" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../../../images/search1.png"/>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </HBox>
+
+
+        <TableView fx:id="adminTable" prefHeight="400" prefWidth="200" styleClass="custom-table">
+            <columns>
+                <TableColumn fx:id="nameColumn" text="Name" styleClass="custom-column" prefWidth="100"/>
+                <TableColumn fx:id="usernameColumn" text="UserName" styleClass="custom-column" prefWidth="100"/>
+
+                <TableColumn fx:id="deleteColumn" text="Delete" styleClass="custom-column" prefWidth="100"/>
+            </columns>
+        </TableView>
+
+
+
+
+        <children>
+            <Button mnemonicParsing="false" onAction="#goBackToAdmin" styleClass="back-button1">
+                <graphic>
+                    <ImageView fitHeight="40" fitWidth="40" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@../../../images/back.png" />
+                    </ImageView>
+                </graphic>
+            </Button>
+
+        </children>
+    </VBox>
+
+</VBox>

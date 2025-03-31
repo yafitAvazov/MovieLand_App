@@ -1,0 +1,372 @@
+.root {
+    -fx-background-image: url("background3.png"); /* שנה לשם התמונה */
+    -fx-background-size: cover;
+}
+.custom-textflow {
+    -fx-text-alignment: center;
+}
+
+.textflow1 {
+    -fx-font-weight: bold;
+    -fx-fill: white;
+    -fx-font-size: 50px;
+    -fx-font-family: "Georgia";
+    -fx-text-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0.5, 0, 2);
+
+}
+.textflow2 {
+    -fx-font-weight: bold;
+    -fx-fill: #f5c518;
+    -fx-font-size: 78px;
+    -fx-font-family: "Georgia";
+    -fx-text-alignment: center;
+
+}
+
+.button {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.3), 5, 0.5, 0, 2);
+           -fx-min-width: 90px;
+            -fx-pref-width: 140px;
+           -fx-max-width: 180px;
+           -fx-min-height: 50px;
+          -fx-pref-height: 60px;
+            -fx-max-height: 60px;
+           -fx-text-alignment: left;
+}
+
+
+.button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-text-fill: #FFD700; /* טקסט זהוב בעת ריחוף */
+    -fx-border-color: #FFD700;
+    -fx-effect: dropshadow(gaussian, #FFD700, 10, 0.1, 0, 2);
+}
+
+
+
+
+
+.button:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.7);
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+.customer_textflow1{
+    -fx-font-weight: bold;
+    -fx-fill: white;
+    -fx-font-size: 45px;
+    -fx-text-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0.5, 0, 2);
+
+}
+.choose_textflow{
+    -fx-padding: 0 0 10 0; /* רווח תחתון של 10 פיקסלים */
+    -fx-text-alignment: center;
+}
+.chooseText{
+    -fx-font-weight: bold;
+    -fx-fill: #f5c518;
+    -fx-font-size: 30px;
+    -fx-font-family: "Georgia";
+    -fx-text-alignment: center;
+}
+.yellow-text {
+    -fx-fill: #f5c518; /* צבע זהב/צהוב */
+    -fx-font-weight: bold;
+    -fx-font-size: 45px;
+    -fx-text-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0.5, 0, 2);
+
+}
+.Button_options {
+    -fx-background-color: #787272;
+    -fx-text-fill: white; /* צבע טקסט */
+    -fx-font-size: 14px; /* טקסט קטן יותר */
+    -fx-font-weight: bold;
+    -fx-border-width: 2px;
+    -fx-border-radius: 30px; /* פינות מעוגלות */
+    -fx-background-radius: 30px;
+    -fx-padding: 5px 5px; /* ריפוד פנימי קטן יותר */
+    -fx-cursor: hand; /* מצביע העכבר יהפוך ליד */
+    -fx-border-color: white; /* מסגרת לבנה */
+
+    -fx-min-width: 80px;
+    -fx-pref-width: 100px;
+    -fx-max-width: 120px;
+    -fx-min-height:40px;
+    -fx-pref-height: 60px;
+    -fx-max-height: 70px;
+    -fx-text-alignment: left;
+}
+.text-field {
+    -fx-font-size: 20px; /* גודל הטקסט */
+    -fx-padding: 2px; /* ריפוד פנימי */
+    -fx-background-color: rgba(200, 200, 200, 0.5); /* רקע אפור שקוף */
+    -fx-text-fill: white; /* טקסט לבן */
+    -fx-prompt-text-fill: white; /* טקסט הקלדה לבן */
+    -fx-background-radius: 5px; /* פינות מעוגלות */
+    -fx-border-color: gray; /* מסגרת אפורה */
+    -fx-border-width: 1px;
+}
+
+.option_text{
+    -fx-fill: #ffffff; /* צבע זהב/צהוב */
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-font-family: "Verdana";
+    -fx-text-alignment: center;
+}
+.search_movie{
+    -fx-fill: #c5bfbf; /* צבע זהב/צהוב */
+    -fx-font-weight: bold;
+    -fx-font-size: 30px;
+    -fx-font-family: "Georgia";
+    -fx-text-alignment: center;
+}
+/* כותרת ראשית */
+.title-label {
+    -fx-font-size: 35px;
+    -fx-text-fill: #FFD700; /* זהוב */
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 10, 0.5, 0, 2);
+}
+
+
+.field-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: white; /* טקסט לבן */
+    -fx-font-weight: bold;
+
+}
+
+.input-field {
+    -fx-pref-width: 200px;
+    -fx-max-width: 290px;
+    -fx-pref-height: 35px;
+    -fx-background-color: rgba(255, 255, 255, 0.2); /* רקע שקוף למחצה */
+    -fx-border-color: white;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: rgba(255, 255, 255, 0.7);
+    -fx-padding: 5px 10px;
+}
+
+
+
+.input-field:focused {
+    -fx-text-fill: black;
+
+    -fx-border-color: #eae6d3;
+    -fx-effect: dropshadow(gaussian, #eadbdb, 10, 0.5, 0, 2);
+}
+
+
+
+.back-button1 {
+    -fx-background-color: transparent;
+    -fx-border-radius: 10px;
+    -fx-border-color: white;
+    -fx-background-radius: 10px;
+    -fx-padding:2px;
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-pref-width: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-width: 40px;
+    -fx-max-height: 40px;
+}
+
+/* שינוי קטן בזמן ריחוף */
+.back-button1:hover {
+    -fx-opacity: 0.8;
+    -fx-border-radius: 10px;
+    -fx-border-color: white;
+    -fx-background-radius: 10px;
+    -fx-padding:2px; /* מסיר את הריפוד הפנימי */
+}
+
+/* עיצוב כללי לטבלה */
+.custom-table {
+    -fx-background-color: rgba(0, 0, 0, 0.3);  /* רקע כהה שקוף למחצה */
+    -fx-border-color: #f5c518;  /* זהוב כהה */
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(62, 61, 61, 0.6), 10, 0.5, 0, 2);
+}
+
+/* עיצוב כללי לעמודות */
+.custom-column {
+    -fx-text-fill: #f5c518;  /* זהוב כהה */
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+/* רקע לכותרות של העמודות */
+.custom-table .column-header-background {
+    -fx-background-color: #f5c518 ; /* רקע כהה חצי שקוף */
+    -fx-border-color: transparent;
+    -fx-background-radius: 10px 10px 0 0;  /* פינות מעוגלות רק למעלה */
+}
+
+
+.custom-table .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-text-fill: white;  /* צבע טקסט לבן */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: #FFD700;  /* קו תחתון זהוב */
+}
+/* הסרת גבולות שקופים מיותרים */
+.custom-table .table-row-cell {
+    -fx-border-color: transparent;
+}
+
+.custom-table .table-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #989797;
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+}
+
+
+.custom-table .table-row-cell:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-cursor: hand;
+}
+
+
+.custom-table .table-row-cell:filled:selected {
+    -fx-background-color: rgba(81, 80, 80, 0.6);
+    -fx-text-fill: #FFD700;
+    -fx-font-weight: bold;
+}
+
+.custom-table .table-cell {
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+}
+
+
+.image-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+    -fx-cursor: hand;
+}
+
+
+.image-button:hover {
+    -fx-opacity: 0.7;
+    -fx-effect: dropshadow(gaussian, #ffffff, 10, 0.1, 0, 2);
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+
+.list-view {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 10px;
+}
+
+.movie-item {
+    -fx-background-color: rgba(50, 50, 50, 0.7); /* רקע כהה חצי שקוף */
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-padding: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(89, 87, 87, 0.5), 8, 0.5, 0, 2); /* צל עדין */
+}
+
+.movie-title {
+    -fx-font-size: 22px;
+    -fx-text-fill: #FFD700; /* צבע זהב */
+    -fx-font-weight: bold;
+}
+
+.movie-details {
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-font-family: "Georgia";
+}
+
+
+.list-view {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 10px;
+}
+
+
+.list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 5px;
+}
+
+
+.list-view .list-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+
+.list-view .list-cell {
+    -fx-border-width: 0;
+}
+
+
+.toggle-button {
+    -fx-background-color: #787272;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-width: 2px;
+    -fx-border-radius: 30px;
+    -fx-background-radius: 30px;
+    -fx-padding: 5px 5px;
+    -fx-cursor: hand;
+    -fx-border-color: white;
+    -fx-min-width: 80px;
+    -fx-pref-width: 100px;
+    -fx-max-width: 120px;
+    -fx-min-height: 40px;
+    -fx-pref-height: 60px;
+    -fx-max-height: 70px;
+    -fx-text-alignment: left;
+}
+
+
+.selected-toggle {
+    -fx-background-color: #FFD700;
+    -fx-text-fill: black;
+    -fx-border-color: #FFD700;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.5), 10, 0.5, 0, 2);
+}
+.no-movies-label {
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.3), 5, 0.5, 0, 2);
+}

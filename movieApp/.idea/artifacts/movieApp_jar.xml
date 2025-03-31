@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="movieApp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/movieApp_jar</output-path>
+    <root id="archive" name="movieApp.jar">
+      <element id="module-output" name="movieApp" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../ProjectAlgorithmModule/out/artifacts/ProjectAlgorithmModule_jar/ProjectAlgorithmModule.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/junit-platform-launcher-1.8.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/junit-jupiter-engine-5.8.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/junit-jupiter-api-5.8.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/gson-2.11.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

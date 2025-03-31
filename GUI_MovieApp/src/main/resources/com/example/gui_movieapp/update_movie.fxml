@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="493.0" prefWidth="349.0" spacing="20.0" stylesheets="@/style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gui_movieapp.UpdateMovieController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="30.0" />
+    </padding>
+
+    <Label styleClass="title-label" text="EDIT MOVIE" />
+
+    <VBox alignment="CENTER" spacing="10">
+        <Label styleClass="field-label" text="TITLE" />
+        <TextField fx:id="titleField" styleClass="input-field" />
+
+        <Label styleClass="field-label" text="GENRE" />
+        <TextField fx:id="genreField" styleClass="input-field" />
+
+        <Label styleClass="field-label" text="DIRECTOR" />
+        <TextField fx:id="directorField" styleClass="input-field" />
+
+        <Label styleClass="field-label" text="ACTORS" />
+        <TextField fx:id="actorsField" styleClass="input-field" />
+
+        <Label styleClass="field-label" text="RELEASE YEAR" />
+        <TextField fx:id="releaseYearField" styleClass="input-field" />
+
+        <Label styleClass="field-label" text="DESCRIPTION" />
+        <TextField fx:id="descriptionField" styleClass="input-field" />
+        <Label fx:id="errorLabel" textFill="#f66b6b" visible="false"/>
+
+        <Button mnemonicParsing="false" onAction="#saveMovieChanges" fx:id="updateMovieButton"
+                style="-fx-min-height: 50px;  -fx-padding: 5px 5px; -fx-max-width: 100px; -fx-background-color: rgba(200, 200, 200, 0.2);"
+                text="UPDATE" />
+    </VBox>
+
+
+</VBox>
